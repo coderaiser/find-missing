@@ -20,8 +20,8 @@ module.exports = (from, to, all) => {
         
         if (free)
             return free;
-        
-    }};
+    }
+};
 
 function check(from, to, all) {
     if (typeof from !== 'number')
