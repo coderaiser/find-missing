@@ -1,0 +1,28 @@
+{
+  "name": "find-missing",
+  "version": "1.0.0",
+  "homepage": "https://github.com/coderaiser/find-missing",
+  "authors": [
+    "coderaiser <mnemonic.enemy@gmail.com>"
+  ],
+  "description": "find missing number in range",
+  "main": "lib/find-missing.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "find",
+    "missing",
+    "number",
+    "range"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
