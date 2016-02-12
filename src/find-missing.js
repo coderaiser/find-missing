@@ -6,7 +6,7 @@ module.exports = (from, to, all) => {
     const includes = number =>
         ~all.indexOf(number);
     
-    const getMissing= numbers =>
+    const getMissing = numbers =>
         numbers.filter(number=> !includes(number))[0];
     
     const half = Math.round((to - from + 1) / 2);
@@ -15,11 +15,12 @@ module.exports = (from, to, all) => {
     if (!includes(half))
         return half;
     
-    for(;from < middle, to > middle; ++from, --to) {
+    for(; from < middle, to > middle; ++from, --to) {
         let free = getMissing([from, to]);
         
         if (free)
             return free;
+        
     }};
 
 function check(from, to, all) {
