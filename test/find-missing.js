@@ -10,6 +10,13 @@ test('return from', t => {
     t.end();
 });
 
+test('return middle', t => {
+    let missing = findMissing(1, 10, [1, 10]);
+    
+    t.equal(missing, 5, 'should return middle');
+    t.end();
+});
+
 test('all contains pair number of elements', t => {
     let missing = findMissing(1, 6, [1, 2, 3, 5, 6]);
     
