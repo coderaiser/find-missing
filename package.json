@@ -16,8 +16,8 @@
     "test": "tape test/*.js",
     "jscs": "jscs --esnext src test",
     "jshint": "jshint src test",
-    "codestyle": "npm-run-all jshint jscs",
-    "build": "npm-run-all clean 6to5 bundle bundle:es6 minify",
+    "codestyle": "redrun jshint jscs",
+    "build": "redrun clean 6to5 bundle bundle:es6 minify",
     "minify": "minify dist/find-missing.js > dist/find-missing.min.js",
     "6to5": "babel -d lib src",
     "wisdom": "npm run build",
@@ -50,8 +50,8 @@
     "jscs": "^3.0.1",
     "jshint": "^2.9.1",
     "minify": "^2.0.3",
-    "npm-run-all": "^1.5.1",
     "nyc": "^6.1.1",
+    "redrun": "^3.0.0",
     "tape": "^4.4.0"
   }
 }
